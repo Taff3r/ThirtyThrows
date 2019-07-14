@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="306dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/ivR0C0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="selectDie"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <ImageView
+            android:id="@+id/ivR0C1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="selectDie"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:srcCompat="@tools:sample/avatars[2]" />
+
+        <ImageView
+            android:id="@+id/ivR0C2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="selectDie"
+            app:layout_column="2"
+            app:layout_row="0"
+            tools:srcCompat="@tools:sample/avatars[15]" />
+
+        <ImageView
+            android:id="@+id/ivR1C0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="selectDie"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:srcCompat="@tools:sample/avatars[13]" />
+
+        <ImageView
+            android:id="@+id/ivR1C1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="selectDie"
+            app:layout_column="1"
+            app:layout_row="1"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+
+        <ImageView
+            android:id="@+id/ivR1C2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="selectDie"
+            app:layout_column="2"
+            app:layout_row="1"
+            tools:srcCompat="@tools:sample/avatars[6]" />
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btnThrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="160dp"
+        android:onClick="add"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginBottom="161dp"
+        android:onClick="roll"
+        android:text="ROLL" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid"
+        android:layout_marginTop="85dp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="13dp"
+        android:onClick="next"
+        android:text="NEXT TURN" />
+
+</RelativeLayout>
